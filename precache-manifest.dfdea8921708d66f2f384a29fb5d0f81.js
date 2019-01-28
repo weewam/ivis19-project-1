@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "bf2b65545c0efa52adba",
+    "revision": "4ef3bf8fe7a608ec7c06",
     "url": "/ivis19-project-1/static/css/main.291ee84d.chunk.css"
   },
   {
-    "revision": "bf2b65545c0efa52adba",
-    "url": "/ivis19-project-1/static/js/main.bf2b6554.chunk.js"
+    "revision": "4ef3bf8fe7a608ec7c06",
+    "url": "/ivis19-project-1/static/js/main.4ef3bf8f.chunk.js"
   },
   {
     "revision": "f81dd31ee2b2aacae0af",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/ivis19-project-1/static/js/runtime~main.59dfa213.js"
   },
   {
-    "revision": "cf2d15d9bcee53f18f421d2cf3459a03",
+    "revision": "aa61814b94fa5a366baeba46c8a07b26",
     "url": "/ivis19-project-1/index.html"
   }
 ];
