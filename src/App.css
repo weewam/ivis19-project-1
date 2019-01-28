@@ -1,32 +1,256 @@
+/*   #General Styling
+================================================== */
+html,
+body {
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Work Sans', sans-serif;
+  color: #4A4A57;
+}
+
+
+figure {
+  margin: 0;
+}
+
+
+figure img {
+  width: 100%;
+  display: block;
+}
+
+#root,
 .App {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 48px auto;
+}
+
+
+
+
+
+/*   #Content
+================================================== */
+.content-container {
+  position: relative;
+  margin: 0 auto;
+
+  width: 100%;
+  padding: 0px 30px;
+  max-width: 1230px;
+
+  box-sizing: border-box;
+}
+
+.content-container header {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+/*   #Typography
+================================================== */
+h1 {
+  margin: 0 0 0.25em;
+
+  color: #4A4A57;
+  font-size: 2em;
+  line-height: 1.62em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  margin: 0 0 1em;
+  position: relative;
+
+  color: #4A4A57;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+  margin: 0;
+
+  color: #4A4A57;
+  font-size: 1.75em;
+  line-height: 1em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  margin: 0;
+
+  color: #949DB1;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.62em;
+  font-family: 'Work Sans', sans-serif;
+}
+
+a {
+  color: #FCA2AE;
+}
+
+
+
+/*   #header
+================================================== */
+.p-container {
+  display: flex;
+}
+
+.p-container p:first-child {
+  margin-right: 32px;
+}
+
+/*   #main
+================================================== */
+main {
+  display: flex;
+  justify-content: space-between;
+
+  flex: 1;
+  margin-top: 48px;
+  position: relative;
+}
+
+
+/*   #Legend
+================================================== */
+.chart-container h2 {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.legend {
+  margin: 0;
+  list-style: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.legend li {
+  margin-top: 12px;
+  margin-right: 16px;
   display: flex;
-  flex-direction: column;
+  font-size: 14px;
+
+  align-items: center;
+}
+
+.legend li figure {
+  margin-right: 8px;
+  border-radius: 20px;
+  height: 16px;
+  width: 16px;
+}
+
+#chart svg {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+/*   #Students
+================================================== */
+.selection-container h2 {
+  text-align: center;
+}
+
+.students {
+  display: flex;
+  flex-wrap: wrap;
+
+  max-width: 500px;
+  
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.student {
+  margin-right: 12px;
+
+  height: 24px;
+  overflow: hidden;
+  border-radius: 12px;
+  line-height: 24px;
+  transition: opacity 250ms ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.student[data-opacity="0"] {
+  opacity: 0.5;
+}
+
+
+
+
+
+/*   #Footer
+================================================== */
+footer {
+  padding-top: 176px;
+  padding-bottom: 176px;
+  background: #101318;
+}
+
+footer .flex-container{
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer h1 {
+  color: #fff;
+  position: relative;
+  line-height: 1em;
+}
+
+footer h1:after {
+  content: "";
+
+  position: absolute;
+  right: -16px;
+  bottom: 6px;
+
+  width: 9px;
+  height: 37px;
+}
+
+footer p {
+  margin-top: 16px;
+
+  font-size: 1.25em;
+}
+
+footer a {
+  display: block;
+  margin-top: 12px;
+
+  font-size: 1.25em;
+  color: #FCA2AE;
+  font-family: 'Poppins', sans-serif;
 }
