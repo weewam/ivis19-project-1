@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ivis19-project-1/precache-manifest.4f63094b29feb7f5144356ad2fa5278f.js"
+  "/ivis19-project-1/precache-manifest.606b548df9dd2cb2f73104a985e1b17b.js"
 );
 
 workbox.clientsClaim();
